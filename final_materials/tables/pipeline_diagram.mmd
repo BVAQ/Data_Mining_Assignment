@@ -1,0 +1,9 @@
+flowchart LR
+    A[Raw CSV files] --> B[Validation and preprocessing]
+    B --> C[Cached base OOF/test predictions]
+    B --> D[Fresh title TF-IDF Ridge features]
+    C --> E[Multi-seed Ridge stack]
+    D --> E
+    E --> F[TV marginal quantile calibration]
+    F --> G[Frontmatter Label 1 override]
+    G --> H[submission_v3_tv_q.csv]

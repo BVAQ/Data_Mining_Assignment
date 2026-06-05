@@ -1,0 +1,6 @@
+experiment,validation_qwk_all,validation_qwk_testvenue,public_qwk,private_qwk,notes
+Title TF-IDF + Logistic/Ridge baseline,0.565 (from gm/REPORT.md),not available,not available,not available,Baseline text model; score recorded in project report.
+Venue mean + optimized thresholds,0.298 (from gm/REPORT.md),not available,not available,not available,Metadata prior baseline.
+S2 META stack,not recomputed here,"available in rebuild logs, not in saved table",around 0.72 earlier plateau,not available,Earlier stacked ensemble consumed as a v3 feature.
+"Rebuild v3 Ridge stack, alpha=5.0",0.6719,0.6708,not directly submitted as raw continuous model,not directly submitted as raw continuous model,Continuous ranking used before tv_q calibration.
+submission_v3_tv_q.csv,uses v3 ranking + TV quantile calibration,uses test-venue marginal calibration,0.75557,0.73479,Final selected submission.

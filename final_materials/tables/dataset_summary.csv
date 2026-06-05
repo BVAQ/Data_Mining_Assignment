@@ -1,0 +1,6 @@
+file,rows,columns,label_available,label_range
+train.csv,2494,7,yes,1-5
+public_test.csv,298,6,no,not available
+private_test.csv,298,6,no,not available
+Test_Submission.csv,596,2,placeholder,1 placeholder
+submission_v3_tv_q.csv,596,2,predicted,1-5

@@ -1,0 +1,9 @@
+check,result,status
+duplicate train ids,0,pass
+duplicate public ids,0,pass
+duplicate private ids,0,pass
+shared train-test titles,0,pass
+shared train-test DOI/link strings,3,inspected; not used as leakage
+Test_Submission id order equals public+private order,True,pass
+final submission id order matches Test_Submission,True,pass
+final labels in 1..5,True,pass

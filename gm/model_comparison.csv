@@ -1,0 +1,8 @@
+strategy,qwk_testvenue,qwk_all
+ridge_stack_a2.0,0.6691,0.6679
+ridge_stack_a0.5,0.6686,0.6665
+ridge_strongFT_a1.0,0.6676,0.6709
+ridge_stack_a1.0,0.6672,0.6658
+ridge_strongFT_a0.5,0.6665,0.6721
+ridge_stack_a0.3,0.6662,0.6647
+mean_strongFT,0.6632,0.6657
