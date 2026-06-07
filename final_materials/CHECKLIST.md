@@ -91,17 +91,18 @@ Verified command:
 Verification result:
 
 - Writes `outputs/reproduced_submission_v3_tv_q.csv`.
-- ID order matches `outputs/submission_v3_tv_q.csv`.
-- Labels exactly match `outputs/submission_v3_tv_q.csv`.
-- Label agreement is `1.0000`.
+- Prints final submission summary in the terminal.
+- Validates output shape, columns, and label range.
+- Default exact reproduction uses `outputs/rebuild_v3_oof.npz`.
+- Optional exact comparison can be run with `--expected outputs/submission_v3_tv_q.csv`.
 
 Status: verified.
 
 Reproducibility limitation to mention if asked:
 
 - The exact selected v3 file depends on saved OOF/test artifacts from earlier model training.
-- The final CSV is exactly reproducible from the available files.
-- Full retraining of every base model is not consolidated into one fast script and would require the original cached transformer models/GPU environment.
+- The final CSV is exactly reproducible from the available raw files plus saved artifacts.
+- Full retraining of every base model from raw CSV only cannot be guaranteed to reproduce the same historical labels because transformer training and embedding/model caches introduce nondeterminism and version dependence.
 
 ## 5. LMS Submission Package
 
